@@ -1,7 +1,11 @@
+import 'package:bytebank_dashboard/http/web_client.dart';
 import 'package:bytebank_dashboard/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(ByteBankApp());
+void main() {
+  runApp(ByteBankApp());
+  findAll().then((value) => print('novas transações $value'));
+}
 
 class ByteBankApp extends StatelessWidget {
   // This widget is the root of your application.
