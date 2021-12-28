@@ -1,10 +1,11 @@
 import 'package:bytebank_dashboard/http/web_client.dart';
+import 'package:bytebank_dashboard/models/contact.dart';
+import 'package:bytebank_dashboard/models/transaction.dart';
 import 'package:bytebank_dashboard/screens/dashboard.dart';
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(ByteBankApp());
-  findAll().then((value) => print('novas transações $value'));
 }
 
 class ByteBankApp extends StatelessWidget {
